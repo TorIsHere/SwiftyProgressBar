@@ -53,6 +53,6 @@ extension CGFloat {
     }
     
     required public init?(coder decoder: NSCoder) {
-        super.init(coder: decoder)!
+        super.init(coder: decoder)
     }
 }
