@@ -13,7 +13,7 @@
 		960B4B6D1D0C6BB20066B58C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960B4B6C1D0C6BB20066B58C /* Test.swift */; };
 		96139EAA1D0B501B00F4625F /* TorProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 96139EA91D0B501B00F4625F /* TorProgressBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96139EB11D0B501B00F4625F /* SwiftyProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96139EA61D0B501B00F4625F /* SwiftyProgressBar.framework */; };
-		96139EB61D0B501B00F4625F /* TorProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96139EB51D0B501B00F4625F /* TorProgressBarTests.swift */; };
+		96139EB61D0B501B00F4625F /* SwiftyProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96139EB51D0B501B00F4625F /* SwiftyProgressBarTests.swift */; };
 		96139EC11D0B506C00F4625F /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96139EC01D0B506C00F4625F /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +34,7 @@
 		96139EA91D0B501B00F4625F /* TorProgressBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorProgressBar.h; sourceTree = "<group>"; };
 		96139EAB1D0B501B00F4625F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96139EB01D0B501B00F4625F /* SwiftyProgressBar.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyProgressBar.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		96139EB51D0B501B00F4625F /* TorProgressBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorProgressBarTests.swift; sourceTree = "<group>"; };
+		96139EB51D0B501B00F4625F /* SwiftyProgressBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyProgressBarTests.swift; sourceTree = "<group>"; };
 		96139EB71D0B501B00F4625F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96139EC01D0B506C00F4625F /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				96139EA81D0B501B00F4625F /* SwiftyProgressBar */,
-				96139EB41D0B501B00F4625F /* TorProgressBarTests */,
+				96139EB41D0B501B00F4625F /* SwiftyProgressBarTests */,
 				96139EA71D0B501B00F4625F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,13 +88,12 @@
 			path = SwiftyProgressBar;
 			sourceTree = "<group>";
 		};
-		96139EB41D0B501B00F4625F /* TorProgressBarTests */ = {
+		96139EB41D0B501B00F4625F /* SwiftyProgressBarTests */ = {
 			isa = PBXGroup;
 			children = (
-				96139EB51D0B501B00F4625F /* TorProgressBarTests.swift */,
+				96139EB51D0B501B00F4625F /* SwiftyProgressBarTests.swift */,
 				96139EB71D0B501B00F4625F /* Info.plist */,
 			);
-			name = TorProgressBarTests;
 			path = SwiftyProgressBarTests;
 			sourceTree = "<group>";
 		};
@@ -218,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96139EB61D0B501B00F4625F /* TorProgressBarTests.swift in Sources */,
+				96139EB61D0B501B00F4625F /* SwiftyProgressBarTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

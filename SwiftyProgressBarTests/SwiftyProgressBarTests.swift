@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import TorProgressBar
+@testable import SwiftyProgressBar
 
 class TorProgressBarTests: XCTestCase {
     
