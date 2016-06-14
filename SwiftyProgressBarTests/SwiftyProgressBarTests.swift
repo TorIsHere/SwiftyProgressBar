@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import SwiftyProgressBar
 
 class SwiftyProgressBarTests: XCTestCase {
     
