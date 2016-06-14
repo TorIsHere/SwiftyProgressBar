@@ -33,16 +33,14 @@ import UIKit
         // Drawing code
         super.drawRect(rect)
     }
-
-    override public init(frame: CGRect) {
-        super.init(frame: frame)
-    }
     
-    required public init?(coder decoder: NSCoder) {
-        super.init(coder: decoder)
+    
+    required public init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     public func animate(toProgress:CGFloat, duration:CFAbsoluteTime) {
+      
         let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
         let radius: CGFloat = max(bounds.width, bounds.height)
         let endAngle:CGFloat = ((toProgress/100) * 360) - 90
