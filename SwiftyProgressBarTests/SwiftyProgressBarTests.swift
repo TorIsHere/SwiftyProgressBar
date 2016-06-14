@@ -1,6 +1,6 @@
 //
-//  TorProgressBarTests.swift
-//  TorProgressBarTests
+//  SwiftyProgressBarTests.swift
+//  SwiftyProgressBarTests
 //
 //  Created by Kittikorn Ariyasuk on 6/11/16.
 //  Copyright © 2016 TorIsHere. All rights reserved.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import SwiftyProgressBar
 
-class TorProgressBarTests: XCTestCase {
+class SwiftyProgressBarTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

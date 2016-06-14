@@ -335,7 +335,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.torishere.TorProgressBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.torishere.SwiftyProgressBar;
 				PRODUCT_NAME = SwiftyProgressBar;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -354,7 +354,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/SwiftyProgressBar/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.torishere.TorProgressBar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.torishere.SwiftyProgressBar;
 				PRODUCT_NAME = SwiftyProgressBar;
 				SKIP_INSTALL = YES;
 			};
@@ -363,9 +363,9 @@
 		96139EBE1D0B501B00F4625F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = TorProgressBarTests/Info.plist;
+				INFOPLIST_FILE = SwiftyProgressBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.torishere.TorProgressBarTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.torishere.SwiftyProgressBarTests;
 				PRODUCT_NAME = SwiftyProgressBar;
 			};
 			name = Debug;
@@ -373,9 +373,9 @@
 		96139EBF1D0B501B00F4625F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = TorProgressBarTests/Info.plist;
+				INFOPLIST_FILE = SwiftyProgressBarTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.torishere.TorProgressBarTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.torishere.SwiftyProgressBarTests;
 				PRODUCT_NAME = SwiftyProgressBar;
 			};
 			name = Release;

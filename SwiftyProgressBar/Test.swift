@@ -1,6 +1,6 @@
 //
 //  Test.swift
-//  TorProgressBar
+//  SwiftyProgressBar
 //
 //  Created by Kittikorn Ariyasuk on 6/11/16.
 //  Copyright © 2016 TorIsHere. All rights reserved.
