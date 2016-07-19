@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		960B4B671D0C522A0066B58C /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960B4B661D0C522A0066B58C /* ProgressView.swift */; };
+		960B4B671D0C522A0066B58C /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960B4B661D0C522A0066B58C /* CircularProgressView.swift */; };
 		960B4B691D0C69BB0066B58C /* CircleView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 96139EC01D0B506C00F4625F /* CircleView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		960B4B6A1D0C69BB0066B58C /* ProgressView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 960B4B661D0C522A0066B58C /* ProgressView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		960B4B6A1D0C69BB0066B58C /* CircularProgressView.swift in Headers */ = {isa = PBXBuildFile; fileRef = 960B4B661D0C522A0066B58C /* CircularProgressView.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		960B4B6D1D0C6BB20066B58C /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960B4B6C1D0C6BB20066B58C /* Test.swift */; };
 		96139EAA1D0B501B00F4625F /* TorProgressBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 96139EA91D0B501B00F4625F /* TorProgressBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		96139EB11D0B501B00F4625F /* SwiftyProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96139EA61D0B501B00F4625F /* SwiftyProgressBar.framework */; };
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		960B4B661D0C522A0066B58C /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		960B4B661D0C522A0066B58C /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		960B4B6C1D0C6BB20066B58C /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		96139EA61D0B501B00F4625F /* SwiftyProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96139EA91D0B501B00F4625F /* TorProgressBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorProgressBar.h; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 				96139EA91D0B501B00F4625F /* TorProgressBar.h */,
 				96139EAB1D0B501B00F4625F /* Info.plist */,
 				96139EC01D0B506C00F4625F /* CircleView.swift */,
-				960B4B661D0C522A0066B58C /* ProgressView.swift */,
+				960B4B661D0C522A0066B58C /* CircularProgressView.swift */,
 			);
 			path = SwiftyProgressBar;
 			sourceTree = "<group>";
@@ -106,7 +106,7 @@
 			files = (
 				96139EAA1D0B501B00F4625F /* TorProgressBar.h in Headers */,
 				960B4B691D0C69BB0066B58C /* CircleView.swift in Headers */,
-				960B4B6A1D0C69BB0066B58C /* ProgressView.swift in Headers */,
+				960B4B6A1D0C69BB0066B58C /* CircularProgressView.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,7 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96139EC11D0B506C00F4625F /* CircleView.swift in Sources */,
-				960B4B671D0C522A0066B58C /* ProgressView.swift in Sources */,
+				960B4B671D0C522A0066B58C /* CircularProgressView.swift in Sources */,
 				960B4B6D1D0C6BB20066B58C /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
