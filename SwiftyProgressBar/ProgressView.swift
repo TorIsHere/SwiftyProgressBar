@@ -11,7 +11,6 @@ import UIKit
 @IBDesignable public class ProgressView: CircleView {
     
     var circleRadius: CGFloat!
-    var pathLayer:CAShapeLayer!
     var progress: CGFloat {
         get {
             return pathLayer.strokeEnd
@@ -34,8 +33,17 @@ import UIKit
         super.drawRect(rect)
     }
     
+    override public init (frame : CGRect) {
+        super.init(frame : frame)
+    }
     
-    required public init(coder aDecoder: NSCoder) {
+    
+    convenience public init () {
+        self.init(frame:CGRect.zero)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        //fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
     }
     
@@ -43,13 +51,13 @@ import UIKit
       
         let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
         let radius: CGFloat = max(bounds.width, bounds.height)
-        let endAngle:CGFloat = ((toProgress/100) * 360) - 90
+        let targetEndAngle:CGFloat = ((toProgress/100) * 360) - 90
         
         self.pathLayer = CAShapeLayer(layer: self.layer)
         self.pathLayer.path =  UIBezierPath(arcCenter: center,
             radius: radius/2 - lineWidth/2,
             startAngle: self.startAngle.degreesToRadians,
-            endAngle: endAngle.degreesToRadians,
+            endAngle: targetEndAngle.degreesToRadians,
             clockwise: true).CGPath
     
         
