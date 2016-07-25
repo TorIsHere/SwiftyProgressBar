@@ -73,8 +73,6 @@ public class CircularProgressView: CircleView {
         
         let gradientLayer:CAGradientLayer = CAGradientLayer(layer: layer)
         gradientLayer.frame = CGRectMake(0, 0, self.frame.width, self.frame.height)
-        print(self.frame)
-        let context = UIGraphicsGetCurrentContext()
         gradientLayer.colors = [self.secondaryColor.CGColor,
                                 self.secondaryColor.CGColor,
                                 self.primaryColor.CGColor,
