@@ -18,14 +18,14 @@ extension CGFloat {
 
 @IBDesignable public class CircleView: UIView {
 
-    @IBInspectable var primaryColor: UIColor = UIColor.blueColor()
-    @IBInspectable var secondaryColor: UIColor = UIColor.grayColor()
-    @IBInspectable var bgColor: UIColor = UIColor.grayColor()
-    @IBInspectable var lineWidth:CGFloat = 10
-    @IBInspectable var bgLineWidth:CGFloat = 6
-    @IBInspectable var startAngle:CGFloat = -90
-    @IBInspectable var endAngle:CGFloat = 0
-    @IBInspectable var willDraw:Bool = true
+    @IBInspectable public var primaryColor: UIColor = UIColor.blueColor()
+    @IBInspectable public var secondaryColor: UIColor = UIColor.grayColor()
+    @IBInspectable public var bgColor: UIColor = UIColor.grayColor()
+    @IBInspectable public var lineWidth:CGFloat = 10
+    @IBInspectable public var bgLineWidth:CGFloat = 6
+    @IBInspectable public var startAngle:CGFloat = -90
+    @IBInspectable public var endAngle:CGFloat = 0
+    @IBInspectable public var willDraw:Bool = true
     
     var pathLayer:CAShapeLayer!
     var path:UIBezierPath!

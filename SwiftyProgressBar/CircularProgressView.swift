@@ -8,7 +8,8 @@
 
 import UIKit
 
-@IBDesignable public class CircularProgressView: CircleView {
+@IBDesignable
+public class CircularProgressView: CircleView {
     
     var circleRadius: CGFloat!
     var progress: CGFloat {
@@ -51,11 +52,6 @@ import UIKit
     
     public func drawCircle() {
         
-         let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
-         let radius: CGFloat = max(bounds.width, bounds.height)
-         self.path.addArcWithCenter(center, radius: radius/2 - lineWidth/2, startAngle: CGFloat(0 * M_PI / 180), endAngle: CGFloat(90.0 * M_PI / 180), clockwise: true)
- 
-        
         self.pathLayer = CAShapeLayer(layer: self.layer)
         self.pathLayer.path = self.path.CGPath
         
@@ -94,6 +90,23 @@ import UIKit
         self.pathLayer.addAnimation(drawAnimation, forKey: "drawCircleAnimation")
     }
 
+    public func setProgress(toProgress:CGFloat, duration:CFAbsoluteTime) {
+        self.endAngle = self.startAngle + ((toProgress/100) * 360)
+        
+        let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
+        let radius: CGFloat = max(bounds.width, bounds.height)
+        
+        self.path = UIBezierPath(arcCenter: center,
+                                 radius: radius/2 - lineWidth/2,
+                                 startAngle: self.startAngle.degreesToRadians,
+                                 endAngle: self.endAngle.degreesToRadians,
+                                 clockwise: true)
+        self.drawCircle()
+        //self.path.addArcWithCenter(center, radius: radius/2 - lineWidth/2, startAngle: self.startAngle.degreesToRadians, endAngle: self.endAngle.degreesToRadians, clockwise: true)
+    }
+    
+    
+    
     
     public func animate(toProgress:CGFloat, duration:CFAbsoluteTime) {
       
