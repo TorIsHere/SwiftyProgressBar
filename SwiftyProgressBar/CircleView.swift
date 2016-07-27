@@ -21,12 +21,13 @@ extension CGFloat {
     @IBInspectable public var primaryColor: UIColor = UIColor.blueColor()
     @IBInspectable public var secondaryColor: UIColor = UIColor.grayColor()
     @IBInspectable public var bgColor: UIColor = UIColor.grayColor()
-    @IBInspectable public var lineWidth:CGFloat = 10
+    @IBInspectable public var lineWidth:CGFloat = 6
     @IBInspectable public var bgLineWidth:CGFloat = 6
     @IBInspectable public var startAngle:CGFloat = -90
-    @IBInspectable public var endAngle:CGFloat = 0
+    @IBInspectable public var endAngle:CGFloat = -90
     @IBInspectable public var willDraw:Bool = true
     
+    var gradientLayer:CAGradientLayer!
     var pathLayer:CAShapeLayer!
     var path:UIBezierPath!
     var bgPath:UIBezierPath!

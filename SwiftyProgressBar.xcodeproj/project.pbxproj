@@ -15,6 +15,7 @@
 		96139EB11D0B501B00F4625F /* SwiftyProgressBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96139EA61D0B501B00F4625F /* SwiftyProgressBar.framework */; };
 		96139EB61D0B501B00F4625F /* SwiftyProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96139EB51D0B501B00F4625F /* SwiftyProgressBarTests.swift */; };
 		96139EC11D0B506C00F4625F /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96139EC01D0B506C00F4625F /* CircleView.swift */; };
+		963B67201D48871200C53D2C /* ReverseCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B671F1D48871200C53D2C /* ReverseCircularProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		96139EB51D0B501B00F4625F /* SwiftyProgressBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyProgressBarTests.swift; sourceTree = "<group>"; };
 		96139EB71D0B501B00F4625F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96139EC01D0B506C00F4625F /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		963B671F1D48871200C53D2C /* ReverseCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseCircularProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				96139EAB1D0B501B00F4625F /* Info.plist */,
 				96139EC01D0B506C00F4625F /* CircleView.swift */,
 				960B4B661D0C522A0066B58C /* CircularProgressView.swift */,
+				963B671F1D48871200C53D2C /* ReverseCircularProgressView.swift */,
 			);
 			path = SwiftyProgressBar;
 			sourceTree = "<group>";
@@ -211,6 +214,7 @@
 				96139EC11D0B506C00F4625F /* CircleView.swift in Sources */,
 				960B4B671D0C522A0066B58C /* CircularProgressView.swift in Sources */,
 				960B4B6D1D0C6BB20066B58C /* Test.swift in Sources */,
+				963B67201D48871200C53D2C /* ReverseCircularProgressView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
