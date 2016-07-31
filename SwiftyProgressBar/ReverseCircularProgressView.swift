@@ -10,6 +10,7 @@ import UIKit
 
 public class ReverseCircularProgressView: CircleView {
     
+    var gradientPieceCount:Int = 0
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override public func drawRect(rect: CGRect) {
