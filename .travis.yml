@@ -1,4 +1,4 @@
 language: objective-c
 osx_image: xcode8.2
 xcode_sdk: iphonesimulator10.1
-script: 'xcodebuild -project SwiftyProgressBar.xcodeproj -scheme SwiftyProgressBar -destination "platform=iOS Simulator,name=iPhone 6" test'
+script: 'xcodebuild clean build -project SwiftyProgressBar.xcodeproj -scheme SwiftyProgressBar'
