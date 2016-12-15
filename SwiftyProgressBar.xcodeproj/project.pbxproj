@@ -16,6 +16,8 @@
 		96139EB61D0B501B00F4625F /* SwiftyProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96139EB51D0B501B00F4625F /* SwiftyProgressBarTests.swift */; };
 		96139EC11D0B506C00F4625F /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96139EC01D0B506C00F4625F /* CircleView.swift */; };
 		963B67201D48871200C53D2C /* ReverseCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B671F1D48871200C53D2C /* ReverseCircularProgressView.swift */; };
+		96E57DF91DFEB9AA00CA22DE /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E57DF81DFEB9AA00CA22DE /* CircularProgressBar.swift */; };
+		96E57DFB1DFEBD2500CA22DE /* BaseCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E57DFA1DFEBD2500CA22DE /* BaseCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,8 @@
 		96139EB71D0B501B00F4625F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96139EC01D0B506C00F4625F /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		963B671F1D48871200C53D2C /* ReverseCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseCircularProgressView.swift; sourceTree = "<group>"; };
+		96E57DF81DFEB9AA00CA22DE /* CircularProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		96E57DFA1DFEBD2500CA22DE /* BaseCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +89,9 @@
 				96139EA91D0B501B00F4625F /* TorProgressBar.h */,
 				96139EAB1D0B501B00F4625F /* Info.plist */,
 				96139EC01D0B506C00F4625F /* CircleView.swift */,
+				96E57DFA1DFEBD2500CA22DE /* BaseCircleView.swift */,
 				960B4B661D0C522A0066B58C /* CircularProgressView.swift */,
+				96E57DF81DFEB9AA00CA22DE /* CircularProgressBar.swift */,
 				963B671F1D48871200C53D2C /* ReverseCircularProgressView.swift */,
 			);
 			path = SwiftyProgressBar;
@@ -165,9 +171,11 @@
 					96139EA51D0B501B00F4625F = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = B92W98DN9L;
+						LastSwiftMigration = 0810;
 					};
 					96139EAF1D0B501B00F4625F = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -214,7 +222,9 @@
 				96139EC11D0B506C00F4625F /* CircleView.swift in Sources */,
 				960B4B671D0C522A0066B58C /* CircularProgressView.swift in Sources */,
 				960B4B6D1D0C6BB20066B58C /* Test.swift in Sources */,
+				96E57DFB1DFEBD2500CA22DE /* BaseCircleView.swift in Sources */,
 				963B67201D48871200C53D2C /* ReverseCircularProgressView.swift in Sources */,
+				96E57DF91DFEB9AA00CA22DE /* CircularProgressBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +356,7 @@
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -366,6 +377,7 @@
 				PRODUCT_NAME = SwiftyProgressBar;
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -376,6 +388,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.torishere.SwiftyProgressBarTests;
 				PRODUCT_NAME = SwiftyProgressBar;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -386,6 +399,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.torishere.SwiftyProgressBarTests;
 				PRODUCT_NAME = SwiftyProgressBar;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

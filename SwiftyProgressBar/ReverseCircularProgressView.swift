@@ -8,14 +8,14 @@
 
 import UIKit
 
-public class ReverseCircularProgressView: CircleView {
+open class ReverseCircularProgressView: CircleView {
     
     var gradientPieceCount:Int = 0
     // Only override drawRect: if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
-    override public func drawRect(rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         // Drawing code
-        super.drawRect(rect)
+        super.draw(rect)
     }
     
     override public init (frame : CGRect) {
@@ -41,13 +41,13 @@ public class ReverseCircularProgressView: CircleView {
         
     }
     
-    public func drawCircle(duration:CFAbsoluteTime?) {
+    open func drawCircle(_ duration:CFAbsoluteTime?) {
         
         self.pathLayer = CAShapeLayer(layer: self.layer)
-        self.pathLayer.path = self.path.CGPath
+        self.pathLayer.path = self.path.cgPath
         
-        self.pathLayer.fillColor = UIColor.clearColor().CGColor
-        self.pathLayer.strokeColor = self.primaryColor.CGColor
+        self.pathLayer.fillColor = UIColor.clear.cgColor
+        self.pathLayer.strokeColor = self.primaryColor.cgColor
         self.pathLayer.lineWidth = self.lineWidth
         self.pathLayer.lineCap = kCALineCapRound
         self.pathLayer.lineJoin = kCALineJoinRound
@@ -63,48 +63,48 @@ public class ReverseCircularProgressView: CircleView {
         drawAnimation.fromValue   = 0.0
         drawAnimation.toValue     = 1.0
         drawAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
-        drawAnimation.removedOnCompletion = false
+        drawAnimation.isRemovedOnCompletion = false
         
         
         self.gradientLayer = CAGradientLayer(layer: layer)
         self.gradientLayer.name = "gradientLayer"
-        self.gradientLayer.frame = CGRectMake(0, 0, self.frame.width, self.frame.height)
-        self.gradientLayer.colors = [self.secondaryColor.CGColor,
-                                     self.secondaryColor.CGColor,
-                                     self.primaryColor.CGColor,
-                                     self.primaryColor.CGColor,
-                                     self.primaryColor.CGColor]
-        self.gradientLayer.startPoint = CGPointMake(0,0.6)
-        self.gradientLayer.endPoint = CGPointMake(1,0.4)
+        self.gradientLayer.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
+        self.gradientLayer.colors = [self.secondaryColor.cgColor,
+                                     self.secondaryColor.cgColor,
+                                     self.primaryColor.cgColor,
+                                     self.primaryColor.cgColor,
+                                     self.primaryColor.cgColor]
+        self.gradientLayer.startPoint = CGPoint(x: 0,y: 0.6)
+        self.gradientLayer.endPoint = CGPoint(x: 1,y: 0.4)
         self.layer.addSublayer(gradientLayer)
         gradientLayer.mask = self.pathLayer
         
         CATransaction.setCompletionBlock {
             for layer in self.layer.sublayers! {
-                if layer.name?.rangeOfString("gradientLayer") != nil {
-                    if layer.name?.rangeOfString("gradientLayer" + String(self.gradientPieceCount)) == nil {
+                if layer.name?.range(of: "gradientLayer") != nil {
+                    if layer.name?.range(of: "gradientLayer" + String(self.gradientPieceCount)) == nil {
                         layer.removeAllAnimations()
                         layer.removeFromSuperlayer()
                     }
                 }
             }
         }
-        self.pathLayer.addAnimation(drawAnimation, forKey: "drawCircleAnimation")
+        self.pathLayer.add(drawAnimation, forKey: "drawCircleAnimation")
         CATransaction.commit()
     }
     
-    public func setProgress(toProgress:CGFloat, duration:CFAbsoluteTime) {
+    open func setProgress(_ toProgress:CGFloat, duration:CFAbsoluteTime) {
         let oldEndAngle:CGFloat = self.endAngle
         self.endAngle = self.startAngle + ((toProgress/100) * 360)
         
         let center = CGPoint(x:bounds.width/2, y: bounds.height/2)
         let radius: CGFloat = max(bounds.width, bounds.height)
-        self.path.addArcWithCenter(center, radius: radius/2 - lineWidth/2, startAngle: oldEndAngle.degreesToRadians, endAngle: endAngle.degreesToRadians, clockwise: true)
+        self.path.addArc(withCenter: center, radius: radius/2 - lineWidth/2, startAngle: oldEndAngle.degreesToRadians, endAngle: endAngle.degreesToRadians, clockwise: true)
         
         self.drawCircle(duration)
     }
     
-    public func erase() {
+    open func erase() {
         for layer in self.layer.sublayers! {
             if layer.name == "gradientLayer" {
                 layer.removeAllAnimations()

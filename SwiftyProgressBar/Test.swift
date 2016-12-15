@@ -8,12 +8,12 @@
 
 import UIKit
 
-public class Test: NSObject {
+open class Test: NSObject {
     override public init() {
         super.init()
     }
     
-    public func test () {
+    open func test () {
         print("test")
     }
     
